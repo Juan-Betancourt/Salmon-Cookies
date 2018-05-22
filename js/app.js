@@ -1,6 +1,6 @@
-'use strict'
-
-var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+'use strict';
+//create an array of open store hours
+var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
 function pikePlace() {
     var pikeStore = {
@@ -10,7 +10,7 @@ function pikePlace() {
         averageCookiesPerCustomer: 6.3,
         customersEachHour: [],
         cookiesSoldEachHour: [],
-        totalDailyCookiesSold: 0
+        totalDailyCookiesSold: 0,
     };
 
 
@@ -34,14 +34,14 @@ function pikePlace() {
 
     pikeStore.render = function() {
         pikeStore.calcCookiesSoldEachHour();
-        // grabing the parent from the DOM
-        var ulEl = document.getElementById('pike')
+        // grabbing the parent from the DOM
+        var ulEl = document.getElementById('pike');
         for (var i = 0; i < hours.length; i++) {
             // this is utilized to create an element
             var liEl = document.createElement('li');
             // this will give the element content
-            liEl.textContent = hours[i] + ': ' + this.cookiesSoldEachHour[i] + ' cookies'
-                // appending the child to the parent
+            liEl.textContent = hours[i] + ': ' + this.cookiesSoldEachHour[i] + ' cookies';
+            // appending the child to the parent
             ulEl.appendChild(liEl);
         }
         liEl = document.createElement('li');
