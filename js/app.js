@@ -64,7 +64,7 @@ function seaTacStore() {
         averageCookiesPerCustomer: 1.2,
         customersEachHour: [],
         cookiesSoldEachHour: [],
-        totalDailyCookiesSold: 0
+        totalDailyCookiesSold: 0,
     };
 
 
@@ -112,7 +112,7 @@ function seattleCenter() {
         averageCookiesPerCustomer: 3.7,
         customersEachHour: [],
         cookiesSoldEachHour: [],
-        totalDailyCookiesSold: 0
+        totalDailyCookiesSold: 0,
     };
 
 
@@ -160,7 +160,7 @@ function capitalHill() {
         averageCookiesPerCustomer: 2.3,
         customersEachHour: [],
         cookiesSoldEachHour: [],
-        totalDailyCookiesSold: 0
+        totalDailyCookiesSold: 0,
     };
 
 
@@ -208,7 +208,7 @@ function alkiStore() {
         averageCookiesPerCustomer: 1.2,
         customersEachHour: [],
         cookiesSoldEachHour: [],
-        totalDailyCookiesSold: 0
+        totalDailyCookiesSold: 0,
     };
 
 
