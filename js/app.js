@@ -54,6 +54,7 @@ function pikePlace() {
     }
 
     pikeStore.render();
+    console.log(pikeStore.render);
 };
 
 function seaTacStore() {
