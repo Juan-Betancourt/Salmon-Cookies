@@ -1,6 +1,22 @@
+#banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+P {
+    margin-left: auto;
+    margin-right: auto;
+    width: 18em
+}
+
 body {
     margin: 0;
     padding: 0;
     background: rgb(126, 125, 27);
     font-family: 'Noto Serif', serif, cursive;
+}
+
+#salesform {
+    background-color: rgb(82, 114, 135);
 }
