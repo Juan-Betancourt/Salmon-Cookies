@@ -91,10 +91,22 @@ function renderAllLocationStores() {
 
 };
 //========== New Store =============//
-var firstAndPike = new SalmonCookieStore('Pike Market Place', 23, 65, 6.3)
-var seaTac = new SalmonCookieStore('SeaTac Airport', 3, 24, 1.2)
-var seattleCenter = new SalmonCookieStore('Seattle Center', 11, 38, 3.7)
-var captiolHill = new SalmonCookieStore('Captiol Hill', 20, 38, 2.3)
-var Alki = new SalmonCookieStore('Alki', 2, 16, 4.6)
+var firstAndPike = new SalmonCookieStore('Pike Market Place', 23, 65, 6.3);
+var seaTac = new SalmonCookieStore('SeaTac Airport', 3, 24, 1.2);
+var seattleCenter = new SalmonCookieStore('Seattle Center', 11, 38, 3.7);
+var captiolHill = new SalmonCookieStore('Captiol Hill', 20, 38, 2.3);
+var Alki = new SalmonCookieStore('Alki', 2, 16, 4.6);
 
 renderAllLocationStores();
+
+//=========== Creating a New Store =========//
+function createFormStore() {
+    var nameOfStore = document.getElementById('storeName').value;
+    var minCustomersNew = document.getElementById('minCustomers').value;
+    var maxCustomersNew = document.getElementById('maxCustomers').value;
+    var avgCookiesSold = document.getElementById('avgCookies').value;
+
+    //========= Call the New Store =======//
+    var createNewStore = new SalmonCookieStore(nameOfStore, minCustomersNew, maxCustomersNew, avgCookiesSold);
+    createNewStore.render();
+};

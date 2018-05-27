@@ -14,6 +14,27 @@
     <header>
         <img src="img/fishing-salmon.jpg" alt="Salmon Cookies Main Logo" id="banner">
     </header>
+    <form id="storeCreator">
+        <fieldset>
+
+            <label for="storeName">Store Name:</label>
+            <input id="storeName" type="text" name="name">
+
+            <label for="minCustomers">Min Customers:</label>
+            <input id="minCustomers" type="number" name="name">
+
+            <label for="maxCustomers">Max Customers:</label>
+            <input id="maxCustomers" type="number" name="name">
+
+            <label for="avgCookies">Average Cookies Per Customer:</label>
+            <input id="avgCookies" type="number" name="name">
+
+            <div>
+                <button type="button" onclick="createFormStore()">Create a Store</button>
+            </div>
+
+        </fieldset>
+    </form>
     <main>
         <p class="heading">Cookies Sold Throughout The Day</p>
         <table id="storeTable"></table>
