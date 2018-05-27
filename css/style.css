@@ -20,3 +20,8 @@ body {
 #salesform {
     background-color: rgb(82, 114, 135);
 }
+
+#storeTable {
+    padding: 10px;
+    background-color: rgb(126, 125, 27);
+}
