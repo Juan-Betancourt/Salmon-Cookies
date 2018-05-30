@@ -36,6 +36,14 @@ SalmonCookieStore.prototype.calculateCookiesPerHour = function() {
         this.cookiesPerHour.push(Math.ceil(this.customersPerHour[i] * this.averageCookiesValue));
         this.totalCookies = this.totalCookies + this.cookiesPerHour[i];
     };
+
+    //========== New Store =============//
+    var firstAndPike = new SalmonCookieStore('Pike Market Place', 23, 65, 6.3);
+    var seaTac = new SalmonCookieStore('SeaTac Airport', 3, 24, 1.2);
+    var seattleCenter = new SalmonCookieStore('Seattle Center', 11, 38, 3.7);
+    var captiolHill = new SalmonCookieStore('Captiol Hill', 20, 38, 2.3);
+    var Alki = new SalmonCookieStore('Alki', 2, 16, 4.6);
+
 };
 //ulEL (unordered list, Element)
 SalmonCookieStore.prototype.render = function() {
@@ -65,6 +73,7 @@ SalmonCookieStore.prototype.render = function() {
 function renderAllLocationStores() {
     var cookieTable = document.getElementById('storeTable');
     var cookieTableRow = document.createElement('tr');
+    //===== End Build of Header Row =======//
 
     //========== Store Locator Tab Header ==========//
     var storeLocationTableTab = document.createElement('td');
@@ -83,19 +92,12 @@ function renderAllLocationStores() {
 
     cookieTable.appendChild(cookieTableRow);
 
-    //===== End Build of Header Row =======//
     for (var i in locationStores) {
         locationStores[i].render();
 
     };
 
 };
-//========== New Store =============//
-var firstAndPike = new SalmonCookieStore('Pike Market Place', 23, 65, 6.3);
-var seaTac = new SalmonCookieStore('SeaTac Airport', 3, 24, 1.2);
-var seattleCenter = new SalmonCookieStore('Seattle Center', 11, 38, 3.7);
-var captiolHill = new SalmonCookieStore('Captiol Hill', 20, 38, 2.3);
-var Alki = new SalmonCookieStore('Alki', 2, 16, 4.6);
 
 renderAllLocationStores();
 
